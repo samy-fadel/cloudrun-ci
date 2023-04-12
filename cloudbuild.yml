@@ -1,7 +1,7 @@
 steps:
 # Build the container image
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'nextjs-docker .', 'us-central1-docker.pkg.dev/$PROJECT_ID/my-docker-repo/savencia-cr', '.']
+  args: ['build', '-t', 'us-central1-docker.pkg.dev/$PROJECT_ID/my-docker-repo/savencia-cr', '.']
 
 # Push the container image to Container Registry
 - name: 'gcr.io/cloud-builders/docker'
